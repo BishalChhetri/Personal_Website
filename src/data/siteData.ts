@@ -95,7 +95,6 @@ export const experience = [
     title: "Database Administrator Intern",
     company: "F1Soft International (FonePay)",
     companyUrl: "https://fonepay.com/",
-    companyUrl: "https://fonepay.com/",
     location: "Kathmandu, Nepal",
     period: "Jan 2022 – Apr 2022",
     companyLogo: "/src/images/fonepay_logo.png",
