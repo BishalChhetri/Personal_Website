@@ -30,6 +30,7 @@ export function EducationCard({
             <img
               src={institutionLogo}
               alt={`${institution} logo`}
+              loading="lazy"
               className="w-full h-full object-cover"
             />
           ) : (

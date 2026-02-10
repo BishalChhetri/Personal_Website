@@ -70,6 +70,7 @@ export function TopNavigation() {
                 <img
                   src="/favicon.ico"
                   alt="Logo"
+                  loading="lazy"
                   className="w-5 h-5"
                   onError={(e) => {
                     // Fallback to initials if favicon fails to load

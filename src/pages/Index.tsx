@@ -96,6 +96,7 @@ export default function Index() {
                 <img
                   src={personalInfo.avatarUrl}
                   alt={personalInfo.name}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

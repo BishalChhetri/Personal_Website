@@ -44,6 +44,7 @@ export function ExperienceCard({
         <img
           src={logoSrc}
           alt={`${company} logo`}
+          loading="lazy"
           className="w-full h-full object-cover"
           onError={() => setLogoError(true)}
         />
