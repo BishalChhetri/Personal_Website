@@ -1,3 +1,11 @@
+// Import all logos
+const profileImage = new URL("../images/profile.jpg", import.meta.url).href;
+const ttuLogo = new URL("../images/ttu_logo.png", import.meta.url).href;
+const kuLogo = new URL("../images/ku_logo.png", import.meta.url).href;
+const blacktechLogo = new URL("../images/blacktech_logo.jpg", import.meta.url).href;
+const bpazesLogo = new URL("../images/bpazes_logo.jpg", import.meta.url).href;
+const fonepayLogo = new URL("../images/fonepay_logo.png", import.meta.url).href;
+
 export const personalInfo = {
   name: "Bishal K C",
   title: "MS Computer Science Researcher",
@@ -7,7 +15,7 @@ export const personalInfo = {
   location: "Cookeville, Tennessee, USA",
   // bio: "Graduate Research Assistant at Tennessee Technological University, specializing in AI, Machine Learning, and Cybersecurity. Focused on Electric Vehicle Charging Station optimization using Genetic Algorithms and Federated Learning.",
   bio: "Hi, I’m Bishal K C. I’m a software engineer from Nepal 🇳🇵, currently based in the U.S. 🇺🇸, who enjoys building thoughtful, real-world software and keeping up with evolving tech. I’m especially curious about AI and how it can be applied in practical ways. When I’m not coding, you’ll usually find me trekking or hiking and exploring the outdoors.",
-  avatarUrl: new URL("../images/profile.jpg", import.meta.url).href,
+  avatarUrl: profileImage,
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/bishal-kc-613001219/",
     github: "https://github.com/BishalChhetri",
@@ -25,7 +33,7 @@ export const education = [
     location: "Cookeville, TN",
     period: "Aug 2024 – May 2026",
     gpa: "4.0/4.0",
-    institutionLogo: "/src/images/ttu_logo.png",
+    institutionLogo: ttuLogo,
     // highlights: [
     //   "Research Assistant: Optimal placement of Electric Vehicle Chargers using Genetic Algorithms",
     //   "Treasurer of Graduate Student Computer Science Club",
@@ -45,7 +53,7 @@ export const education = [
     location: "Dhulikhel, Nepal",
     period: "Aug 2017 – Mar 2022",
     gpa: "3.57/4.0",
-    institutionLogo: "/src/images/ku_logo.png",
+    institutionLogo: kuLogo,
     // highlights: [
     //   "Full-tuition scholarship recipient",
     //   "Organizer of IT Meet V 8.0 (biggest IT event in Nepal)",
@@ -60,7 +68,7 @@ export const experience = [
     company: "Tennessee Technological University",
     location: "Cookeville, TN",
     period: "Aug 2024 – May 2026",
-    companyLogo: "/src/images/ttu_logo.png",
+    companyLogo: ttuLogo,
     highlights: [
       "Developed a Python-based genetic algorithm for multi-criteria location optimization and predictive traffic modeling with ArcGIS Pro",
       "Won 1st prize at CEROC AI-Assisted Cybersecurity Competition by building an LSTM model (99%training accuracy) for drone data and XGBoost (95.25% accuracy) for power system data.",
@@ -72,7 +80,7 @@ export const experience = [
     companyUrl: "https://www.restrox.com/",
     location: "Pokhara, Nepal",
     period: "Dec 2022 – Jun 2024",
-    companyLogo: "/src/images/blacktech_logo.jpg",
+    companyLogo: blacktechLogo,
     highlights: [
       "Built a robust checkout system with discount handling, tax/shipping logic, and validation rules.",
       "Reduced website load time by 3 seconds through lazy loading, database query optimization, and API call reduction.",
@@ -85,7 +93,7 @@ export const experience = [
     company: "Business Pazes Pvt. Ltd.",
     location: "Kathmandu, Nepal",
     period: "Jul 2022 – Oct 2022",
-    companyLogo: "/src/images/bpazes_logo.jpg",
+    companyLogo: bpazesLogo,
     highlights: [
       "Integrated Google and Apple OAuth for smooth and secure user sign-in, enhancing the onboarding experience.",
       "Developed scalable APIs using Sequelize ORM, improving system reliability and reducing platform downtime by 10%.",
@@ -97,7 +105,7 @@ export const experience = [
     companyUrl: "https://fonepay.com/",
     location: "Kathmandu, Nepal",
     period: "Jan 2022 – Apr 2022",
-    companyLogo: "/src/images/fonepay_logo.png",
+    companyLogo: fonepayLogo,
     highlights: [
       "Optimized database operations with scripts, stored procedures, and functions, ensuring data integrity and reducing SQL injection vulnerabilities by 30%.",
     ],
