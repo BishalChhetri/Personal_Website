@@ -27,7 +27,7 @@ export default function Publications() {
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Publications</h1>
           <p className="text-xl text-muted-foreground">
-            Peer-reviewed research papers and articles
+            All the peer-reviewed research papers and articles.
           </p>
         </motion.div>
 

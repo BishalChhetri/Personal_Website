@@ -1,4 +1,4 @@
-import { FloatingToolbar } from "./FloatingToolbar";
+import { TopNavigation } from "./TopNavigation";
 import { Footer } from "./Footer";
 
 interface LayoutProps {
@@ -7,14 +7,10 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col">
-      <FloatingToolbar />
-      <main className="flex-1 pr-16 md:pr-20">
-        {children}
-      </main>
-      <div className="pr-16 md:pr-20">
-        <Footer />
-      </div>
+    <div className="min-h-screen flex flex-col pt-4">
+      <TopNavigation />
+      <main className="flex-1">{children}</main>
+      <Footer />
     </div>
   );
 }

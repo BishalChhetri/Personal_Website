@@ -35,11 +35,16 @@ export default function Projects() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid md:grid-cols-2 gap-6"
         >
           {projects.map((project, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <ProjectCard {...project} />
+              <ProjectCard
+                {...project}
+                description={
+                  (project as any).fullDescription || project.description
+                }
+              />
             </motion.div>
           ))}
         </motion.div>

@@ -36,8 +36,8 @@ import {
 
 const navItems = [
   { icon: Home, label: "Home", path: "/" },
-  { icon: Briefcase, label: "Experience", path: "/experience" },
-  { icon: FolderKanban, label: "Projects", path: "/projects" },
+  { icon: Briefcase, label: "Work Experience", path: "/experience" },
+  // { icon: FolderKanban, label: "Projects", path: "/projects" },
   { icon: BookOpen, label: "Publications", path: "/publications" },
   { icon: FileText, label: "Blog", path: "/blog" },
   { icon: Mail, label: "Contact", path: "/contact" },
@@ -160,12 +160,19 @@ export function FloatingToolbar() {
           <div className="flex flex-col items-center text-center py-4">
             <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4">
               <span className="text-2xl font-bold text-primary-foreground">
-                {personalInfo.name.split(' ').map(n => n[0]).join('')}
+                {personalInfo.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .join("")}
               </span>
             </div>
             <h3 className="text-xl font-semibold">{personalInfo.name}</h3>
-            <p className="text-muted-foreground text-sm mt-1">{personalInfo.title}</p>
-            <p className="text-muted-foreground text-sm">{personalInfo.location}</p>
+            <p className="text-muted-foreground text-sm mt-1">
+              {personalInfo.title}
+            </p>
+            <p className="text-muted-foreground text-sm">
+              {personalInfo.location}
+            </p>
             <div className="flex gap-3 mt-4">
               <a
                 href={personalInfo.socialLinks.linkedin}
@@ -206,7 +213,9 @@ export function FloatingToolbar() {
               </div>
               <div>
                 <p className="font-medium">LinkedIn</p>
-                <p className="text-sm text-muted-foreground">Professional Network</p>
+                <p className="text-sm text-muted-foreground">
+                  Professional Network
+                </p>
               </div>
             </a>
             <a
@@ -234,7 +243,9 @@ export function FloatingToolbar() {
               </div>
               <div>
                 <p className="font-medium">Google Scholar</p>
-                <p className="text-sm text-muted-foreground">Research Publications</p>
+                <p className="text-sm text-muted-foreground">
+                  Research Publications
+                </p>
               </div>
             </a>
             <a
@@ -246,7 +257,9 @@ export function FloatingToolbar() {
               </div>
               <div>
                 <p className="font-medium">Email</p>
-                <p className="text-sm text-muted-foreground">{personalInfo.email}</p>
+                <p className="text-sm text-muted-foreground">
+                  {personalInfo.email}
+                </p>
               </div>
             </a>
           </div>

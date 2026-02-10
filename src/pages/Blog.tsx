@@ -25,9 +25,9 @@ export default function Blog() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Blog</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Blogs</h1>
           <p className="text-xl text-muted-foreground">
-            Thoughts on research, technology, and more
+            All the important blogs related to research, technology, and more.
           </p>
         </motion.div>
 
@@ -46,7 +46,9 @@ export default function Blog() {
           </motion.div>
         ) : (
           <div className="text-center py-20">
-            <p className="text-muted-foreground">No blog posts yet. Check back soon!</p>
+            <p className="text-muted-foreground">
+              No blog posts yet. Check back soon!
+            </p>
           </div>
         )}
       </div>
