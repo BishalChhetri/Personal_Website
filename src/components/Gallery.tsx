@@ -44,7 +44,7 @@ export function Gallery({ items }: GalleryProps) {
 
         <motion.div
           whileHover={{ scale: 1.02 }}
-          className="rounded-xl overflow-hidden cursor-pointer relative group aspect-video"
+          className="rounded-xl overflow-hidden cursor-pointer relative group aspect-square"
         >
           <video
             src={items[1].src}

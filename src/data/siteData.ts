@@ -14,7 +14,7 @@ export const personalInfo = {
   phone: "(931) 644-9494",
   location: "Cookeville, Tennessee, USA",
   // bio: "Graduate Research Assistant at Tennessee Technological University, specializing in AI, Machine Learning, and Cybersecurity. Focused on Electric Vehicle Charging Station optimization using Genetic Algorithms and Federated Learning.",
-  bio: "Hi, I’m Bishal K C. I’m a software engineer from Nepal 🇳🇵, currently based in the U.S. 🇺🇸, who enjoys building thoughtful, real-world software and keeping up with evolving tech. I’m especially curious about AI and how it can be applied in practical ways. When I’m not coding, you’ll usually find me trekking or hiking and exploring the outdoors.",
+  bio: "Hi, I’m Bishal K C, currently based in the U.S. I’m a Graduate Research Assistant at Tennessee Technological University with experience building scalable software systems and applying machine learning to real-world optimization and security challenges. My background spans full-stack development, cloud-native deployments, and data-driven modeling, and I enjoy turning research ideas into reliable, production-ready solutions. I’m particularly interested in how AI can be applied in practical, meaningful ways. Outside of work, I enjoy trekking, hiking, and spending time outdoors.",
   avatarUrl: profileImage,
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/bishal-kc-613001219/",

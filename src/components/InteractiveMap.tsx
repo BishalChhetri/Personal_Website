@@ -53,7 +53,7 @@ export function InteractiveMap() {
   }, []);
 
   return (
-    <div className="w-full h-[300px] rounded-xl overflow-hidden border border-border/40 shadow-lg">
+    <div className="w-full h-[300px] rounded-xl overflow-hidden border border-border/40 shadow-lg relative z-0">
       <div ref={mapContainer} className="w-full h-full" />
     </div>
   );
