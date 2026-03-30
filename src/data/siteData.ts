@@ -78,9 +78,9 @@ export const experience = [
   },
   {
     title: "Database Administrator Intern",
-    company: "F1Soft International (FonePay)",
+    company: "Fonepay Payment Service Ltd.,",
     companyUrl: "https://fonepay.com/",
-    location: "Kathmandu, Nepal",
+    location: "Lalitpur, Nepal",
     period: "Jan 2022 – Apr 2022",
     highlights: [
       "Optimized database operations with scripts and stored procedures",
