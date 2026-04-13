@@ -2,7 +2,8 @@
 const profileImage = new URL("../images/profile.jpg", import.meta.url).href;
 const ttuLogo = new URL("../images/ttu_logo.png", import.meta.url).href;
 const kuLogo = new URL("../images/ku_logo.png", import.meta.url).href;
-const blacktechLogo = new URL("../images/blacktech_logo.jpg", import.meta.url).href;
+const blacktechLogo = new URL("../images/blacktech_logo.jpg", import.meta.url)
+  .href;
 const bpazesLogo = new URL("../images/bpazes_logo.jpg", import.meta.url).href;
 const fonepayLogo = new URL("../images/fonepay_logo.png", import.meta.url).href;
 
@@ -14,7 +15,7 @@ export const personalInfo = {
   phone: "(931) 644-9494",
   location: "Cookeville, Tennessee, USA",
   // bio: "Graduate Research Assistant at Tennessee Technological University, specializing in AI, Machine Learning, and Cybersecurity. Focused on Electric Vehicle Charging Station optimization using Genetic Algorithms and Federated Learning.",
-  bio: "Hi, I’m Bishal K C, currently based in the U.S. I’m a Graduate Research Assistant at Tennessee Technological University with experience building scalable software systems and applying machine learning to real-world optimization and security challenges. My background spans full-stack development, cloud-native deployments, and data-driven modeling, and I enjoy turning research ideas into reliable, production-ready solutions. I’m particularly interested in how AI can be applied in practical, meaningful ways. Outside of work, I enjoy trekking, hiking, and spending time outdoors.",
+  bio: "Hi, I'm Bishal, a Software Engineer with 4+ years of experience designing and building scalable web applications across the full stack. I've shipped production systems serving thousands of users, led feature development from concept to deployment, and collaborated with cross-functional teams in fast-paced environments. My work spans frontend development with React and Next.js, backend APIs with Node.js and Express, cloud infrastructure on AWS, and applied AI including RAG-based chatbots, computer vision models, and cybersecurity research. I care about writing clean, maintainable code and building products that make a real difference for users.",
   avatarUrl: profileImage,
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/bishal-kc-613001219/",
@@ -31,7 +32,7 @@ export const education = [
     degree: "M.S. in Computer Science",
     institution: "Tennessee Technological University",
     location: "Cookeville, TN",
-    period: "Aug 2024 – May 2026",
+    period: "Aug 2024 – Aug 2026",
     gpa: "4.0/4.0",
     institutionLogo: ttuLogo,
     // highlights: [
@@ -67,11 +68,12 @@ export const experience = [
     title: "Graduate Research Assistant",
     company: "Tennessee Technological University",
     location: "Cookeville, TN",
-    period: "Aug 2024 – May 2026",
+    period: "Aug 2024 – Aug 2026",
     companyLogo: ttuLogo,
     highlights: [
-      "Developed a Python-based genetic algorithm for multi-criteria location optimization and predictive traffic modeling with ArcGIS Pro",
-      "Won 1st prize at CEROC AI-Assisted Cybersecurity Competition by building an LSTM model (99%training accuracy) for drone data and XGBoost (95.25% accuracy) for power system data.",
+      "Developed a Python-based Genetic Algorithm (GA) and Ant Colony Optimization (ACO) Algorithm for multi-criteria location optimization and predictive traffic modeling with ArcGIS Pro.",
+      "Won 1st prize at CEROC AI-Assisted Cybersecurity Competition by building an LSTM model (99% training accuracy) for drone data and XGBoost (95.25% accuracy) for power system data.",
+      "Served as Treasurer of the Computer Science Student Club, overseeing financial operations and collaborating with leadership to organize student-focused events.",
     ],
   },
   {
@@ -82,10 +84,12 @@ export const experience = [
     period: "Dec 2022 – Jun 2024",
     companyLogo: blacktechLogo,
     highlights: [
-      "Built a robust checkout system with discount handling, tax/shipping logic, and validation rules.",
-      "Reduced website load time by 3 seconds through lazy loading, database query optimization, and API call reduction.",
-      "Migrated and synchronized MongoDB databases ensuring data integrity and minimal downtime.",
-      "Deployed applications on AWS EC2 with Docker, automated S3 backups, & implemented CI/CD pipelines via CircleCI.",
+      "Led the development of a multi-tenant restaurant management platform serving 100+ restaurants and 10,000+ users, covering Order Management with KOT, Inventory Management, Digital QR Menu, and Table & Space Management.",
+      "Built a real-time dashboard enabling restaurant owners to monitor live sales, track inventory, manage orders, and view reports from anywhere across all locations.",
+      "Reduced website load time by 3 seconds through lazy loading, database query optimization, and API call reduction, directly improving user experience at scale.",
+      "Deployed and maintained the platform on AWS EC2 with Docker, automated S3 backups, and implemented CI/CD pipelines via CircleCI for zero-downtime deployments.",
+      "Migrated and synchronized MongoDB databases across multiple tenants, ensuring data integrity and minimal downtime during scaling operations.",
+      "Mentored interns and junior developers through technical guidance and code reviews, improving code quality and supporting team collaboration.",
     ],
   },
   {
@@ -95,8 +99,9 @@ export const experience = [
     period: "Jul 2022 – Oct 2022",
     companyLogo: bpazesLogo,
     highlights: [
-      "Integrated Google and Apple OAuth for smooth and secure user sign-in, enhancing the onboarding experience.",
-      "Developed scalable APIs using Sequelize ORM, improving system reliability and reducing platform downtime by 10%.",
+      "Implemented a promotional offer system for a high-traffic e-commerce platform, supporting coupon codes, percentage discounts, and time-limited festive deals across all products, handling hundreds of concurrent orders during peak seasons.",
+      "Collaborated with senior developers to design, build, and ship multiple features across the platform, contributing to consistent on-time delivery and overall product quality.",
+      "Integrated Google and Apple OAuth for secure and seamless user authentication, improving the onboarding experience.",
     ],
   },
   {
@@ -107,7 +112,7 @@ export const experience = [
     period: "Jan 2022 – Apr 2022",
     companyLogo: fonepayLogo,
     highlights: [
-      "Optimized database operations with scripts, stored procedures, and functions, ensuring data integrity and reducing SQL injection vulnerabilities by 30%.",
+      "Optimized database performance through scripts, stored procedures, and functions, ensuring data integrity and reducing SQL injection vulnerabilities by 30%.",
     ],
   },
 ];
