@@ -65,10 +65,20 @@ export const education = [
 
 export const experience = [
   {
+    title: "Graduate Student Researcher",
+    company: "CEROC at Tennessee Technological University",
+    location: "Cookeville, TN",
+    period: "May 2026 – Aug 2026",
+    companyLogo: ttuLogo,
+    highlights: [
+      "Currently exploring quantum computing through research and software development, applying two-timescale reinforcement learning to quantum network optimization.",
+    ],
+  },
+  {
     title: "Graduate Research Assistant",
     company: "Tennessee Technological University",
     location: "Cookeville, TN",
-    period: "Aug 2024 – Aug 2026",
+    period: "Aug 2024 – April 2026",
     companyLogo: ttuLogo,
     highlights: [
       "Developed a Python-based Genetic Algorithm (GA) and Ant Colony Optimization (ACO) Algorithm for multi-criteria location optimization and predictive traffic modeling with ArcGIS Pro.",
@@ -134,6 +144,28 @@ export const projects = [
     ],
     links: {
       paper: "https://doi.org/10.1007/s42979-026-04763-6",
+    },
+  },
+  {
+    title: "Can-Enable – French Learning Platform",
+    description:
+      "Built a full-stack French language learning platform with live class scheduling, instructor-led sessions, and Stripe payment integration for seamless course and session purchases.",
+    fullDescription:
+      "Built a full-stack French language learning platform with live class scheduling, appointment booking, and instructor-led sessions delivered via virtual meeting links. Developed an end-to-end appointment system with automated email confirmations, integrated Stripe for secure payment processing, and designed a modern accessible UI using Tailwind CSS, shadcn/ui, and Radix UI primitives. Deployed on AWS EC2 with Nginx as a reverse proxy, leveraging HTTP/2 and HSTS for performance and security.",
+    tags: [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "MySQL",
+      "Stripe",
+      "AWS EC2",
+      "Nginx",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "CI/CD",
+    ],
+    links: {
+      live: "https://can-enable.com",
     },
   },
   {
