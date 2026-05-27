@@ -65,7 +65,7 @@ export const education = [
 
 export const experience = [
   {
-    title: "Graduate Student Researcher",
+    title: "Research Software Engineer",
     company: "CEROC at Tennessee Technological University",
     location: "Cookeville, TN",
     period: "May 2026 – Aug 2026",
