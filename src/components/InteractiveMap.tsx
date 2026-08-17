@@ -4,7 +4,8 @@ import L from "leaflet";
 import { MapPin } from "lucide-react";
 
 // Cookeville, Tennessee, USA coordinates
-const COOKEVILLE_COORDS: [number, number] = [36.1628, -85.5016];
+// const COOKEVILLE_COORDS: [number, number] = [36.1628, -85.5016];
+const DALLAS_COORDS: [number, number] = [32.779167, -96.808891];
 
 export function InteractiveMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
@@ -40,14 +41,14 @@ export function InteractiveMap() {
     // Create map instance
     const map = L.map(mapContainer.current, {
       attributionControl: false, // Remove attribution watermark
-    }).setView(COOKEVILLE_COORDS, 13);
+    }).setView(DALLAS_COORDS, 13);
 
     // Add OpenStreetMap tiles (will be updated based on theme)
     const tileLayer = L.tileLayer(
       "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       {
         attribution: "", // Remove attribution text
-      },
+      }
     ).addTo(map);
 
     tileLayerRef.current = tileLayer;
@@ -63,10 +64,10 @@ export function InteractiveMap() {
     });
 
     // Add marker
-    L.marker(COOKEVILLE_COORDS, { icon: customIcon })
+    L.marker(DALLAS_COORDS, { icon: customIcon })
       .addTo(map)
       .bindPopup(
-        '<div style="padding: 8px;"><h4 style="font-weight: 600; margin-bottom: 4px;">Cookeville, Tennessee</h4><p style="font-size: 12px; color: #666;">USA</p></div>',
+        '<div style="padding: 8px;"><h4 style="font-weight: 600; margin-bottom: 4px;">Cookeville, Tennessee</h4><p style="font-size: 12px; color: #666;">USA</p></div>'
       );
 
     mapInstance.current = map;
