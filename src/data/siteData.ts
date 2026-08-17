@@ -66,8 +66,9 @@ export const education = [
 
 export const experience = [
   {
-    title: "Research Software Engineer",
-    company: "Cybersecurity Education, Research and Outreach Center (CEROC) at TNTech",
+    title: "Research Software Engineer Intern",
+    company:
+      "Cybersecurity Education, Research and Outreach Center (CEROC) at TNTech",
     location: "Cookeville, TN",
     period: "May 2026 – July 2026",
     companyLogo: ttuLogo,
